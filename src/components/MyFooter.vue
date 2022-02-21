@@ -9,21 +9,21 @@
             <h4>DC COMICS</h4>
             <nav>
               <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
+                <a>Characters</a>
+                <a>Comics</a>
+                <a>Movies</a>
+                <a>TV</a>
+                <a>Games</a>
+                <a>Videos</a>
+                <a>News</a>
               </ul>
             </nav>
 
             <h4>SHOP</h4>
             <nav>
               <ul>
-                <li>Shop DC</li>
-                <li>Shop DC Collectibles</li>
+                <a>Shop DC</a>
+                <a>Shop DC Collectibles</a>
               </ul>
             </nav>
           </div>
@@ -32,17 +32,17 @@
             <h4>DC</h4>
             <nav>
               <ul>
-                <li>Terms Of Use</li>
-                <li>Privacy policy (New)</li>
-                <li>Ad Choices</li>
-                <li>Advertising</li>
-                <li>Jobs</li>
-                <li>subscriptions</li>
-                <li>Talent Workshop</li>
-                <li>CPSC Cartificates</li>
-                <li>Ratings</li>
-                <li>Shop Help</li>
-                <li>Contact Us</li>
+                <a>Terms Of Use</a>
+                <a>Privacy policy (New)</a>
+                <a>Ad Choices</a>
+                <a>Advertising</a>
+                <a>Jobs</a>
+                <a>subscriptions</a>
+                <a>Talent Workshop</a>
+                <a>CPSC Cartificates</a>
+                <a>Ratings</a>
+                <a>Shop Help</a>
+                <a>Contact Us</a>
               </ul>
             </nav>
           </div>
@@ -51,11 +51,11 @@
             <h4>SITES</h4>
             <nav>
               <ul>
-                <li>DC</li>
-                <li>MAD Magazine</li>
-                <li>DC Kids</li>
-                <li>DC Universe</li>
-                <li>DC Power Visa</li>
+                <a>DC</a>
+                <a>MAD Magazine</a>
+                <a>DC Kids</a>
+                <a>DC Universe</a>
+                <a>DC Power Visa</a>
               </ul>
             </nav>
           </div>
@@ -79,17 +79,17 @@
 
     <div class="container">
 
-      <div id="button">
+      <a id="button">
         <h3 id="bottonText">SIGN-UP NOW!</h3>
-      </div>
+      </a>
 
       <div id="socialBox">
         <h3 id="socialText">FOLLOW US</h3>
-        <img class="socialImg" src="../assets/img/footer-facebook.png" alt="">
-        <img class="socialImg" src="../assets/img/footer-twitter.png" alt="">
-        <img class="socialImg" src="../assets/img/footer-youtube.png" alt="">
-        <img class="socialImg" src="../assets/img/footer-pinterest.png" alt="">
-        <img class="socialImg" src="../assets/img/footer-periscope.png" alt="">
+        <a href=""><img class="socialImg" src="../assets/img/footer-facebook.png" alt=""></a>
+        <a href=""><img class="socialImg" src="../assets/img/footer-twitter.png" alt=""></a>
+        <a href=""><img class="socialImg" src="../assets/img/footer-youtube.png" alt=""></a>
+        <a href=""><img class="socialImg" src="../assets/img/footer-pinterest.png" alt=""></a>
+        <a href=""><img class="socialImg" src="../assets/img/footer-periscope.png" alt=""></a>
       </div>   
 
     </div>
@@ -156,7 +156,12 @@ export default {
     margin-top: 10px;
   }
 
-  li{
+  ul{
+    display: flex;
+    flex-direction:column;
+  }
+
+  a{
     list-style: none;
     color: gray;
     font-size: 12px;

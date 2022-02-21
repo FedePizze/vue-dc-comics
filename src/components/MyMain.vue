@@ -4,15 +4,13 @@
     <div class="container">
       <h2>-- Content goes here --</h2>
     </div>
-
-    
   </div>
 
   <div id="points">
     <div class="container">
       <div class="card" v-for="(link, index) in links" :key="index">
         <img class="imgPoints" :src="link.src">
-        <h5>{{link.text}}</h5>
+        <a class="linkText">{{link.text}}</a>
       </div>
       
     </div>
@@ -63,7 +61,7 @@ export default {
 
   .container{
     width: 70%;
-    padding: 35px 0px;
+    padding: 40px 0px;
     margin: 0px auto;
     display: flex;
   }
@@ -87,10 +85,24 @@ export default {
   }
 
   .imgPoints{
-    width: 45px;
+    width: 39px;
   }
 
-  h2, h5{
+  .card:nth-child(1) .imgPoints{
+    width: 32px;
+  }
+
+  .card:nth-child(4) .imgPoints{
+    width: 22px;
+  }
+
+  h2{
+    font-size: 22px;
+    color: white;
+  }
+
+  .linkText{
+    font-size: 13px;
     color: white;
   }
 

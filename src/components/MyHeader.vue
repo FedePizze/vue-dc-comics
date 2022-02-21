@@ -7,16 +7,16 @@
 
     <nav>
       <ul>
-        <li>CHARACTERS</li>
-        <li>COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <a class="listItems">CHARACTERS</a>
+        <a class="listItems">COMICS</a>
+        <a class="listItems">MOVIES</a>
+        <a class="listItems">TV</a>
+        <a class="listItems">GAMES</a>
+        <a class="listItems">COLLECTIBLES</a>
+        <a class="listItems">VIDEOS</a>
+        <a class="listItems">FANS</a>
+        <a class="listItems">NEWS</a>
+        <a class="listItems">SHOP</a>
       </ul>
     </nav>
   </div>
@@ -40,7 +40,7 @@ export default {
 
   .container{
     width: 70%;
-    margin: 20px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,11 +55,11 @@ export default {
     gap: 25px;
   }
 
-  li{
+  .listItems{
     list-style: none;
     font-size: 12px;
     font-weight: 700;
-    padding: 40px 0px;
+    padding: 50px 0px;
     border-bottom: 5px solid $DcColor-none;
 
     &:hover, &:active{
